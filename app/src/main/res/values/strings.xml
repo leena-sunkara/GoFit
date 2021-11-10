@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GoFit</string>
+    <string name="don_t_wish">Don’t wish for it, GoFit for it.</string>
+    <string name="already_a_member">Already a Member?</string>
+</resources>
