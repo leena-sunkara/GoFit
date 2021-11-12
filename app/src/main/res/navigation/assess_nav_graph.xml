@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/assess_nav_graph"
+    app:startDestination="@id/welcome">
+
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.masai.gofit.assessment.welcomeFragment"
+        android:label="welcomeFragment">
+        <action
+            android:id="@+id/action_welcome_to_goalFragment"
+            app:destination="@id/goalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="com.masai.gofit.assessment.GoalFragment"
+        android:label="GoalFragment" >
+        <action
+            android:id="@+id/action_goalFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.masai.gofit.assessment.GenderFragment"
+        android:label="GenderFragment" >
+        <action
+            android:id="@+id/action_genderFragment_to_basicDetailsFragment2"
+            app:destination="@id/basicDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicDetailsFragment2"
+        android:name="com.masai.gofit.assessment.BasicDetailsFragment"
+        android:label="BasicDetailsFragment" >
+        <action
+            android:id="@+id/action_basicDetailsFragment2_to_intrestFragment"
+            app:destination="@id/intrestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intrestFragment"
+        android:name="com.masai.gofit.assessment.IntrestFragment"
+        android:label="IntrestFragment" >
+        <action
+            android:id="@+id/action_intrestFragment_to_equpmentsFragment"
+            app:destination="@id/equpmentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/equpmentsFragment"
+        android:name="com.masai.gofit.assessment.EqupmentsFragment"
+        android:label="EqupmentsFragment" >
+        <action
+            android:id="@+id/action_equpmentsFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.masai.gofit.assessment.LevelFragment"
+        android:label="LevelFragment" >
+        <action
+            android:id="@+id/action_levelFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.masai.gofit.assessment.LocationFragment"
+        android:label="LocationFragment" >
+        <action
+            android:id="@+id/action_locationFragment_to_preferFragment"
+            app:destination="@id/preferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preferFragment"
+        android:name="com.masai.gofit.assessment.PreferFragment"
+        android:label="PreferFragment" >
+        <action
+            android:id="@+id/action_preferFragment_to_daysFragment"
+            app:destination="@id/daysFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/daysFragment"
+        android:name="com.masai.gofit.assessment.DaysFragment"
+        android:label="DaysFragment" >
+        <action
+            android:id="@+id/action_daysFragment_to_timeLongFragment"
+            app:destination="@id/timeLongFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/timeLongFragment"
+        android:name="com.masai.gofit.assessment.TimeLongFragment"
+        android:label="TimeLongFragment" >
+        <action
+            android:id="@+id/action_timeLongFragment_to_processiongFragment"
+            app:destination="@id/processiongFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/processiongFragment"
+        android:name="com.masai.gofit.assessment.ProcessiongFragment"
+        android:label="fragment_processiong"
+        tools:layout="@layout/fragment_processiong" />
+</navigation>

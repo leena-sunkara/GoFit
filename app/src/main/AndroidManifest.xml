@@ -22,14 +22,14 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".FacebookLoginActivity"
-            android:exported="false" />
-        <activity
             android:name=".SignupActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
+        <activity
+            android:name=".assessment.AssessmentActivity"
+            android:exported="true" />
         <activity
             android:name=".FeaturesActivity"
             android:exported="false" />

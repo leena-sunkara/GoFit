@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assessment.welcomeFragment">
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="38dp"
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="280dp"
+        android:layout_height="10dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="54dp"/>
+
+
+    <ImageView
+        android:layout_width="225dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/loadingprogress" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="38dp"
+        android:text="Where do you prefer to workout ? "
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gym"
+        android:layout_width="369dp"
+        android:layout_height="56dp"
+        android:background="#E4F9FF"
+        android:layout_below="@+id/gender"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Gym"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+    />
+
+
+
+
+    <Button
+        android:id="@+id/homeorOutside"
+        android:layout_width="369dp"
+        android:layout_height="56dp"
+        android:background="#E4F9FF"
+        android:layout_below="@+id/gym"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="At Home or Outside"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+    />
+
+
+    <Button
+        android:id="@+id/contninueBtn9"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:background="@drawable/cont"
+        android:layout_below="@id/homeorOutside"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
+
