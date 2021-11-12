@@ -4,20 +4,25 @@
     android:id="@+id/logo_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".SplashScreenActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_logo" />
+        android:layout_gravity="center"
+        android:src="@drawable/ic_logo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/don_t_wish"
-        android:textAppearance="@style/don_t_wish" />
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
 </LinearLayout>
 

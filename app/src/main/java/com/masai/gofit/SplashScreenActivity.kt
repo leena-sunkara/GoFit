@@ -3,6 +3,10 @@ package com.masai.gofit
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.view.View
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import kotlinx.android.synthetic.main.splash_screen.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -17,13 +21,11 @@ class SplashScreenActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             delayActivity()
         }
-        logo_layout.setOnClickListener {
-            startActivity(Intent(this, FeaturesActivity::class.java))
-        }
     }
 
     private suspend fun delayActivity() {
-        delay(3000)
+        delay(2000)
         startActivity(Intent(this, FeaturesActivity::class.java))
+        finish()
     }
 }

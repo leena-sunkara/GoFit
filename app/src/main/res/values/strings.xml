@@ -2,4 +2,33 @@
     <string name="app_name">GoFit</string>
     <string name="don_t_wish">Don’t wish for it, GoFit for it.</string>
     <string name="already_a_member">Already a Member?</string>
+    <string name="try_it_now">Try it Now</string>
+    <string name="log_in">Log In</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="continue_with">Continue with</string>
+    <string name="or">OR</string>
+    <string name="lets_get_started">Hi there! Let’s get started</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="join_gofit">Join GoFit</string>
+    <string name="terms_and_conditions">By joining GoFit, you agree to our terms of service</string>
+    <string name="search_nearby">Search Nearby</string>
+    <string name="discover_nearby">Discover nearby Fitness club and Gyms, Compare them and  reserve your seat.</string>
+    <string name="build_community">Build Community</string>
+    <string name="share_progress">Share your progress to your community, compete with them and be on top.</string>
+    <string name="live_classes">Live Classes</string>
+    <string name="workout_in_comfort_zone">Work out from your comfort zone in your home space by best industry trainers.</string>
+    <string name="reward_points">Reward Points</string>
+    <string name="keep_yourself_motivated">Keep yourself motivated with badges and reward points on completion of every task.</string>
+    <string name="new_credentials">New Credentials</string>
+    <string name="set_new_password">Set your new password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">Update</string>
+    <string name="password_updated">Password Updated</string>
+    <string name="your_password_updated">Your Password has been updated!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
