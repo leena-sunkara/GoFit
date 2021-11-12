@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoFit">
         <activity
+            android:name=".assessment.AssessmentActivity"
+            android:exported="true" />
+        <activity
             android:name=".FeaturesActivity"
             android:exported="false" />
         <activity
