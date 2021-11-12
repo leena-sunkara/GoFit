@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".assessment.welcomeFragment">
+
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/back"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="38dp"
+        android:text="Skip"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="280dp"
+        android:layout_height="10dp"
+        android:src="@drawable/loading"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="54dp"/>
+
+
+    <ImageView
+        android:layout_width="41dp"
+        android:layout_height="10dp"
+        android:src="@drawable/loadingprogress"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="54dp"/>
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your primary fitness goal ? "
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"/>
+
+    <Button
+        android:id="@+id/loseweight"
+        android:layout_width="369dp"
+        android:layout_height="80dp"
+        android:background="#E4F9FF"
+        android:layout_below="@+id/goal"
+        android:layout_marginStart="24dp"
+        android:drawableLeft="@drawable/lose"
+        android:layout_marginTop="40dp"
+        android:text="Lose Weigth"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+        />
+
+
+    <Button
+        android:id="@+id/stress"
+        android:layout_width="369dp"
+        android:layout_height="80dp"
+        android:background="#E4F9FF"
+        android:layout_below="@+id/loseweight"
+        android:drawableLeft="@drawable/stress"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Reduce Stress"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+    />
+
+
+    <Button
+        android:id="@+id/strength"
+        android:layout_width="369dp"
+        android:layout_height="80dp"
+        android:background="#E4F9FF"
+        android:layout_below="@+id/stress"
+        android:drawableLeft="@drawable/strength"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Build Strength"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+    />
+
+
+    <Button
+        android:id="@+id/fit"
+        android:layout_width="369dp"
+        android:layout_height="80dp"
+        android:background="#E4F9FF"
+        android:drawableLeft="@drawable/stayfit"
+        android:layout_below="@+id/strength"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Stay Fit"
+        android:textAllCaps="false"
+        android:textSize="18dp"/>
+    />
+
+
+
+    <Button
+        android:id="@+id/contninueBtn2"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:background="@drawable/cont"
+        android:layout_below="@id/fit"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
+
