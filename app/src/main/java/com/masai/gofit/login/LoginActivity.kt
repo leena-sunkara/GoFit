@@ -1,18 +1,18 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
 import android.widget.Toast
-import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.masai.gofit.R
+import com.masai.gofit.assessment.AssessmentActivity
+import com.masai.gofit.home.HomeActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_login.password
-import kotlinx.android.synthetic.main.activity_signup.*
 
 class LoginActivity : AppCompatActivity() {
 

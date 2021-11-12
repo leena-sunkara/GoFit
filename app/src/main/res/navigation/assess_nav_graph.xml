@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcome"
-        android:name="com.masai.gofit.assessment.welcomeFragment"
+        android:name="com.masai.gofit.assessment.WelcomeFragment"
         android:label="welcomeFragment">
         <action
             android:id="@+id/action_welcome_to_goalFragment"
@@ -91,12 +91,21 @@
         android:name="com.masai.gofit.assessment.TimeLongFragment"
         android:label="TimeLongFragment" >
         <action
-            android:id="@+id/action_timeLongFragment_to_processiongFragment"
-            app:destination="@id/processiongFragment" />
+            android:id="@+id/action_timeLongFragment_to_processingFragment"
+            app:destination="@id/processingFragment" />
     </fragment>
     <fragment
-        android:id="@+id/processiongFragment"
-        android:name="com.masai.gofit.assessment.ProcessiongFragment"
-        android:label="fragment_processiong"
-        tools:layout="@layout/fragment_processiong" />
+        android:id="@+id/processingFragment"
+        android:name="com.masai.gofit.assessment.ProcessingFragment"
+        android:label="fragment_processing"
+        tools:layout="@layout/fragment_processing" >
+        <action
+            android:id="@+id/action_processingFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.masai.gofit.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>

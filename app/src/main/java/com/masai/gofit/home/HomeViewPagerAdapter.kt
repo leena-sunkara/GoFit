@@ -1,4 +1,4 @@
-package com.masai.gofit
+package com.masai.gofit.home
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

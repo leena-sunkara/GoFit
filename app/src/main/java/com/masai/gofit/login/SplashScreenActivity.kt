@@ -1,18 +1,16 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.View
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
-import kotlinx.android.synthetic.main.splash_screen.*
+import com.masai.gofit.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
+@SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +19,9 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.masai.gofit.home.HomeActivity
+import com.masai.gofit.R
+import com.masai.gofit.assessment.AssessmentActivity
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignupActivity : AppCompatActivity() {
@@ -33,8 +36,8 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        initViews()
         auth = Firebase.auth
+        initViews()
     }
 
     private fun initViews() {
@@ -171,6 +174,6 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        startActivity(Intent(this, HomeActivity::class.java))
+        startActivity(Intent(this, AssessmentActivity::class.java))
     }
 }

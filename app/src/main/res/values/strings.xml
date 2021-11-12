@@ -29,6 +29,9 @@
     <string name="update">Update</string>
     <string name="password_updated">Password Updated</string>
     <string name="your_password_updated">Your Password has been updated!</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="how_often_do_you_workout">How often do you want to workout ?</string>
+    <string name="a_day_in_a_week">1 day in a week</string>
+    <string name="what_equipments_do_you_have">What equipments do you have access to ?</string>
+    <string name="less_than_15_mins"><![CDATA[< 15 min]]></string>
 </resources>

@@ -56,9 +56,8 @@ class TimeLongFragment : Fragment() {
         navController = Navigation.findNavController(view)
 
         contninueBtn10.setOnClickListener {
-            navController!!.navigate(R.id.action_timeLongFragment_to_processiongFragment)
+            navController!!.navigate(R.id.action_timeLongFragment_to_processingFragment)
         }
-
 
     }
 

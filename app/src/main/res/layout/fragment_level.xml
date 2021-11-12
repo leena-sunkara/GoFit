@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assessment.welcomeFragment">
-
-
+    tools:context=".assessment.WelcomeFragment">
 
     <ImageView
         android:id="@+id/back"
@@ -24,7 +22,7 @@
         android:layout_marginTop="38dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:textSize="16sp"/>
 
     <ImageView
         android:id="@+id/progressbar"
@@ -33,7 +31,6 @@
         android:src="@drawable/loading"
         android:layout_marginTop="48dp"
         android:layout_marginStart="54dp"/>
-
 
     <ImageView
         android:layout_width="200dp"
@@ -65,7 +62,6 @@
         android:text="Beginner"
         android:textAllCaps="false"
         android:textSize="18dp" />
-    />
 
     <Button
         android:id="@+id/intermidate"
@@ -78,9 +74,6 @@
         android:text="Intermediate"
         android:textAllCaps="false"
         android:textSize="18dp" />
-    />
-
-
 
     <Button
         android:id="@+id/advance"
@@ -93,8 +86,6 @@
         android:text="Advanced"
         android:textAllCaps="false"
         android:textSize="18dp"/>
-    />
-
 
     <Button
         android:id="@+id/contninueBtn7"
@@ -106,8 +97,6 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
-
-
 
 </RelativeLayout>
 

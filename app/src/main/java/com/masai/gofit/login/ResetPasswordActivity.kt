@@ -1,8 +1,9 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.masai.gofit.R
 import kotlinx.android.synthetic.main.activity_reset_password.*
 
 class ResetPasswordActivity : AppCompatActivity() {

@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assessment.welcomeFragment">
-
-
+    tools:context=".assessment.WelcomeFragment">
 
     <ImageView
         android:id="@+id/back"
@@ -33,7 +31,6 @@
         android:src="@drawable/loading"
         android:layout_marginTop="48dp"
         android:layout_marginStart="54dp"/>
-
 
     <ImageView
         android:layout_width="215dp"
@@ -63,7 +60,6 @@
        android:layout_marginTop="40dp"
        android:layout_marginStart="24dp"/>
 
-
     <Button
         android:id="@+id/contninueBtn8"
         android:layout_width="368dp"
@@ -74,8 +70,6 @@
         android:background="@drawable/cont"
         android:text="Continue"
         android:textColor="@color/white" />
-
-
 
 </RelativeLayout>
 

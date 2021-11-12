@@ -13,28 +13,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoFit">
         <activity
-            android:name=".PasswordUpdatedActivity"
+            android:name=".login.PasswordUpdatedActivity"
             android:exported="false" />
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".login.ResetPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".login.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".login.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".assessment.AssessmentActivity"
             android:exported="true" />
         <activity
-            android:name=".FeaturesActivity"
+            android:name=".login.FeaturesActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".login.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
