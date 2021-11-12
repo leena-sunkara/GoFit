@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "533783938596-419acaqasuog4b84lo61l5vskegnt8rb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.masai.gofit",
+            "certificate_hash": "2b61cfa1dcd9b407235d68a9dd00a36bac9c6272"
+          }
+        },
+        {
           "client_id": "533783938596-bjqir85817uf2dk1i5cs9epbqjordmvj.apps.googleusercontent.com",
           "client_type": 3
         }

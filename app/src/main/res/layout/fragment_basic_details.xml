@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assessment.welcomeFragment">
-
-
+    tools:context=".assessment.WelcomeFragment">
 
     <ImageView
         android:id="@+id/back"
@@ -46,7 +44,7 @@
         android:id="@+id/basics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tell us your basics. "
+        android:text="Tell us your basics"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -58,7 +56,7 @@
         android:id="@+id/EtAge"
         android:layout_width="368dp"
         android:layout_height="56dp"
-        android:hint="Your Agr"
+        android:hint="Your Age"
         android:layout_marginTop="40dp"
         android:layout_marginStart="24dp"
         android:textColor="@color/white"
@@ -97,7 +95,6 @@
         android:hint="Your Goal Weight"
         android:textColor="@color/white" />
 
-
     <Button
         android:id="@+id/contninueBtn4"
         android:layout_width="368dp"
@@ -108,8 +105,6 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
-
-
 
 </RelativeLayout>
 

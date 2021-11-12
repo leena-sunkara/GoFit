@@ -1,4 +1,4 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter

@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assessment.welcomeFragment">
-
-
+    tools:context=".assessment.WelcomeFragment">
 
     <ImageView
         android:id="@+id/back"
@@ -19,21 +17,20 @@
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/back"
         android:layout_marginStart="305dp"
         android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/back"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:textSize="16sp" />
 
     <ImageView
         android:id="@+id/progressbar"
         android:layout_width="280dp"
         android:layout_height="10dp"
-        android:src="@drawable/loading"
+        android:layout_marginStart="54dp"
         android:layout_marginTop="48dp"
-        android:layout_marginStart="54dp"/>
-
+        android:src="@drawable/loading" />
 
     <ImageView
         android:layout_width="72dp"
@@ -46,89 +43,75 @@
         android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your gender? "
-        android:textColor="@color/black"
-        android:textSize="22dp"
-        android:textStyle="bold"
         android:layout_below="@+id/progressbar"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="38dp"
-        android:layout_marginStart="24dp"/>
+        android:text="What is your gender?"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/Male"
         android:layout_width="369dp"
         android:layout_height="56dp"
-        android:background="#E4F9FF"
         android:layout_below="@+id/gender"
         android:layout_marginStart="24dp"
-        android:drawableLeft="@drawable/male"
         android:layout_marginTop="40dp"
+        android:background="#E4F9FF"
+        android:drawableLeft="@drawable/male"
         android:text="Male"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
-
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/Female"
         android:layout_width="369dp"
         android:layout_height="56dp"
-        android:background="#E4F9FF"
         android:layout_below="@+id/Male"
         android:layout_marginStart="24dp"
-        android:drawableLeft="@drawable/female"
         android:layout_marginTop="40dp"
-        android:text="Fenale"
+        android:background="#E4F9FF"
+        android:drawableLeft="@drawable/female"
+        android:text="Female"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/Binary"
         android:layout_width="369dp"
         android:layout_height="56dp"
-        android:background="#E4F9FF"
         android:layout_below="@+id/Female"
         android:layout_marginStart="24dp"
-        android:drawableLeft="@drawable/nonbinary"
         android:layout_marginTop="40dp"
+        android:background="#E4F9FF"
+        android:drawableLeft="@drawable/nonbinary"
         android:text="Non Binary"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/notDisclose"
         android:layout_width="369dp"
         android:layout_height="56dp"
-        android:background="#E4F9FF"
         android:layout_below="@+id/Binary"
         android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
+        android:background="#E4F9FF"
         android:drawableLeft="@drawable/notdisclose"
         android:text="Prefer not to Disclose"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
-
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/contninueBtn3"
         android:layout_width="368dp"
         android:layout_height="48dp"
-        android:background="@drawable/cont"
         android:layout_below="@id/notDisclose"
-        android:text="Continue"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
-
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cont"
+        android:text="Continue"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
-

@@ -1,4 +1,4 @@
-package com.masai.gofit
+package com.masai.gofit.login
 
 import android.content.Intent
 import android.content.res.Resources
@@ -7,10 +7,9 @@ import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.google.android.material.tabs.TabLayout
-
 import androidx.viewpager2.widget.ViewPager2
-
 import com.google.android.material.tabs.TabLayoutMediator
+import com.masai.gofit.R
 import kotlinx.android.synthetic.main.activity_features.*
 
 class FeaturesActivity : AppCompatActivity() {

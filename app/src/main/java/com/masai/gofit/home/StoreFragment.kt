@@ -1,17 +1,19 @@
-package com.masai.gofit
+package com.masai.gofit.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.masai.gofit.R
 
-class RewardPointsFragment : Fragment() {
+class StoreFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_reward_points, container, false)
+        return inflater.inflate(R.layout.fragment_store, container, false)
     }
 }

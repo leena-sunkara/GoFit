@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".assessment.welcomeFragment">
-
-
+    tools:context=".assessment.WelcomeFragment">
 
     <ImageView
         android:id="@+id/back"
@@ -24,7 +22,7 @@
         android:layout_marginTop="38dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:textSize="16sp"/>
 
     <ImageView
         android:id="@+id/progressbar"
@@ -33,7 +31,6 @@
         android:src="@drawable/loading"
         android:layout_marginTop="48dp"
         android:layout_marginStart="54dp"/>
-
 
     <ImageView
         android:layout_width="41dp"
@@ -46,9 +43,9 @@
         android:id="@+id/goal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What is your primary fitness goal ? "
+        android:text="What is your primary fitness goal ?"
         android:textColor="@color/black"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:textStyle="bold"
         android:layout_below="@+id/progressbar"
         android:layout_marginTop="38dp"
@@ -65,9 +62,7 @@
         android:layout_marginTop="40dp"
         android:text="Lose Weigth"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-        />
-
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/stress"
@@ -80,9 +75,7 @@
         android:layout_marginTop="40dp"
         android:text="Reduce Stress"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/strength"
@@ -95,9 +88,7 @@
         android:layout_marginTop="40dp"
         android:text="Build Strength"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/fit"
@@ -110,10 +101,7 @@
         android:layout_marginTop="40dp"
         android:text="Stay Fit"
         android:textAllCaps="false"
-        android:textSize="18dp"/>
-    />
-
-
+        android:textSize="18sp"/>
 
     <Button
         android:id="@+id/contninueBtn2"
@@ -126,7 +114,4 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
-
-
 </RelativeLayout>
-
