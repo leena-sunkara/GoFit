@@ -9,13 +9,10 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.masai.gofit.R
 import kotlinx.android.synthetic.main.fragment_basic_details.*
-import kotlinx.android.synthetic.main.fragment_goal.*
-
 
 class BasicDetailsFragment : Fragment() {
+
     private var navController: NavController? = null
-
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,11 +24,10 @@ class BasicDetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        navController = Navigation.findNavController(view)
 
+        navController = Navigation.findNavController(view)
         contninueBtn4.setOnClickListener {
             navController!!.navigate(R.id.action_basicDetailsFragment2_to_intrestFragment)
         }
     }
-
 }

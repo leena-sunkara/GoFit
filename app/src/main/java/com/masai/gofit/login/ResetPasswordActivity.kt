@@ -10,8 +10,14 @@ class ResetPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reset_password)
-        update.setOnClickListener {
-            val newPassword = new_password.text.toString()
+
+        backArrow.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        btnUpdate.setOnClickListener {
+            val newPassword = newPassword.text.toString()
+            // Update Password
             startActivity(Intent(this, PasswordUpdatedActivity::class.java))
         }
     }

@@ -59,6 +59,7 @@
             android:text="@string/log_in"
             android:textColor="@color/light_blue"
             android:textSize="16sp" />
+
     </LinearLayout>
 
 </RelativeLayout>

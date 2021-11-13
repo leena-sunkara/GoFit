@@ -79,12 +79,12 @@
         android:id="@+id/contninueBtn9"
         android:layout_width="368dp"
         android:layout_height="48dp"
-        android:background="@drawable/cont"
         android:layout_below="@id/homeorOutside"
-        android:text="Continue"
-        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cont"
+        android:text="Continue"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
 

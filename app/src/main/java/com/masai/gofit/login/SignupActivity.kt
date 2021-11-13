@@ -40,6 +40,9 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        backArrow.setOnClickListener {
+            startActivity(Intent(this, FeaturesActivity::class.java))
+        }
         emailSignup.setOnClickListener {
             registerEmailAccount()
         }
@@ -53,6 +56,7 @@ class SignupActivity : AppCompatActivity() {
 
     public override fun onStart() {
         super.onStart()
+        //Check if user is signed in (non-null) and update UI accordingly
         val currentUser = auth.currentUser
         updateUI(currentUser)
     }
@@ -71,9 +75,13 @@ class SignupActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
+                    //Sign in success, update UI with the signed-in user's information
+                    Log.d(TAG, "CreateUserWithEmail:Success")
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
+                    //If sign in fails, display a message to the user.
+                    Log.w(TAG, "CreateUserWithEmail:Failure", task.exception)
                     Toast.makeText(
                         baseContext, "Authentication failed!",
                         Toast.LENGTH_SHORT
@@ -84,22 +92,14 @@ class SignupActivity : AppCompatActivity() {
     }
 
     private fun registerGoogleAccount() {
-        // Configure Google Sign In
+        //Configure Google Sign In
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            //.requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
-    }
-
-    private fun signIn() {
+        //Sign In
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
-    }
-
-    companion object {
-        private const val TAG = "GoogleActivity"
-        private const val RC_SIGN_IN = 9001
     }
 
     private fun registerFacebookAccount() {
@@ -115,29 +115,30 @@ class SignupActivity : AppCompatActivity() {
                 }
 
                 override fun onCancel() {
-                    //Log.d(FacebookLoginActivity.TAG, "facebook:onCancel")
+                    Log.d(TAG, "Facebook:onCancelMethod")
                 }
 
                 override fun onError(error: FacebookException) {
-                    //Log.d(FacebookLoginActivity.TAG, "facebook:onError", error)
+                    Log.d(TAG, "Facebook:onErrorMethod", error)
                 }
             })
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-
         //Google
         if (requestCode == RC_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
-                val account = task.getResult(ApiException::class.java) ?: return
-                firebaseAuthWithGoogle(account.idToken ?: return)
+                //Google Sign In was successful, authenticate with Firebase
+                val account = task.getResult(ApiException::class.java)!!
+                Log.d(TAG, "FirebaseAuthWithGoogle:" + account.id)
+                firebaseAuthWithGoogle(account.idToken!!)
             } catch (e: ApiException) {
+                //Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e)
             }
         }
-
         //Facebook
         callbackManager.onActivityResult(requestCode, resultCode, data)
     }
@@ -147,9 +148,17 @@ class SignupActivity : AppCompatActivity() {
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
+                    //Sign in success, update UI with the signed-in user's information
+                    Log.d(TAG, "SignInWithCredential:Success")
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
+                    //If sign in fails, display a message to the user
+                    Log.w(TAG, "SignInWithCredential:Failure", task.exception)
+                    Toast.makeText(
+                        baseContext, "Authentication failed!",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     updateUI(null)
                 }
             }
@@ -160,9 +169,13 @@ class SignupActivity : AppCompatActivity() {
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
+                    //Sign in success, update UI with the signed-in user's information
+                    Log.d(TAG, "SignInWithCredential:Success")
                     val user = auth.currentUser
                     updateUI(user)
                 } else {
+                    //If sign in fails, display a message to the user
+                    Log.w(TAG, "SignInWithCredential:Failure", task.exception)
                     Toast.makeText(
                         baseContext, "Authentication failed!",
                         Toast.LENGTH_SHORT
@@ -172,7 +185,13 @@ class SignupActivity : AppCompatActivity() {
             }
     }
 
+    companion object {
+        private const val TAG = "SignupActivity"
+        private const val RC_SIGN_IN = 100
+    }
+
     private fun updateUI(user: FirebaseUser?) {
         startActivity(Intent(this, AssessmentActivity::class.java))
+        finish()
     }
 }

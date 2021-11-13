@@ -48,8 +48,8 @@ class FeaturesActivity : AppCompatActivity() {
     private fun dpToPx(dp: Int) = (dp * Resources.getSystem().displayMetrics.density).toInt()
 
     private fun initViews() {
-        viewPager2 = findViewById(R.id.viewPager);
-        tabLayout = findViewById(R.id.tabLayout);
+        viewPager2 = findViewById(R.id.viewPager)
+        tabLayout = findViewById(R.id.tabLayout)
     }
 
     private fun setViewPagerAdapter() {

@@ -16,7 +16,6 @@ class GenderFragment : Fragment() {
 
     private var navController: NavController? = null
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

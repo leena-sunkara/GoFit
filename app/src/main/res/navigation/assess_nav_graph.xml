@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/assess_nav_graph"
     app:startDestination="@id/welcome">
 
     <fragment
         android:id="@+id/welcome"
         android:name="com.masai.gofit.assessment.WelcomeFragment"
-        android:label="welcomeFragment">
+        android:label="WelcomeFragment">
         <action
             android:id="@+id/action_welcome_to_goalFragment"
             app:destination="@id/goalFragment" />
@@ -97,15 +96,6 @@
     <fragment
         android:id="@+id/processingFragment"
         android:name="com.masai.gofit.assessment.ProcessingFragment"
-        android:label="fragment_processing"
-        tools:layout="@layout/fragment_processing" >
-        <action
-            android:id="@+id/action_processingFragment_to_homeActivity"
-            app:destination="@id/homeActivity" />
+        android:label="ProcessingFragment">
     </fragment>
-    <activity
-        android:id="@+id/homeActivity"
-        android:name="com.masai.gofit.home.HomeActivity"
-        android:label="activity_home"
-        tools:layout="@layout/activity_home" />
 </navigation>

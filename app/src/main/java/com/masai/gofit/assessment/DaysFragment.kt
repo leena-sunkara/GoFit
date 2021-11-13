@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.masai.gofit.R
-import kotlinx.android.synthetic.main.fragment_location.*
-import kotlinx.android.synthetic.main.fragment_prefer.*
-
+import kotlinx.android.synthetic.main.fragment_days.*
 
 class DaysFragment : Fragment() {
     private var navController: NavController? = null
@@ -29,7 +27,7 @@ class DaysFragment : Fragment() {
 
         navController = Navigation.findNavController(view)
 
-        contninueBtn9.setOnClickListener {
+        contninueBtn10.setOnClickListener {
             navController!!.navigate(R.id.action_daysFragment_to_timeLongFragment)
         }
     }
