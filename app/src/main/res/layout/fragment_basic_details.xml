@@ -9,33 +9,36 @@
         android:id="@+id/backArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/ic_back_arrow" />
-
-    <ImageView
-        android:id="@+id/progressbar"
-        android:layout_width="280dp"
-        android:layout_height="10dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="48dp"
-        android:src="@drawable/loading" />
 
     <TextView
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="305dp"
-        android:layout_marginTop="38dp"
-        android:layout_toRightOf="@+id/back"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="16dp" />
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/progressbar"
+        android:layout_width="260dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/loading" />
 
     <ImageView
         android:layout_width="104dp"
         android:layout_height="10dp"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="22dp"
         android:src="@drawable/loadingprogress" />
 
     <TextView
@@ -52,43 +55,47 @@
 
     <EditText
         android:id="@+id/EtAge"
-        android:layout_width="368dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/basics"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="#E4F9FF"
         android:hint="Your Age"
+        android:padding="15dp"
         android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/EtHeight"
-        android:layout_width="368dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/EtAge"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"
+        android:padding="15dp"
         android:background="#E4F9FF"
         android:hint="Your Height"
         android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/EtWeight"
-        android:layout_width="368dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/EtHeight"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_margin="20dp"
+        android:padding="15dp"
         android:background="#E4F9FF"
         android:hint="Your Weight"
         android:textColor="@color/white" />
 
     <EditText
         android:id="@+id/EtGoalWeight"
-        android:layout_width="368dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/EtWeight"
-        android:layout_marginStart="24dp"
+        android:layout_margin="20dp"
+        android:padding="15dp"
         android:layout_marginTop="40dp"
         android:background="#E4F9FF"
         android:hint="Your Goal Weight"
@@ -96,14 +103,13 @@
 
     <Button
         android:id="@+id/contninueBtn4"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/EtGoalWeight"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
         android:background="@drawable/cont"
         android:text="Continue"
         android:textColor="@color/white" />
 
 </RelativeLayout>
-

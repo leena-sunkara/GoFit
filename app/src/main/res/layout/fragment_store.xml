@@ -1,13 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home.StoreFragment">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/dp"
+            android:text="@string/profile_name"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_cart" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_light_blue"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="10dp"
+        android:hint="@string/search"
+        android:padding="10dp" />
+
+    <ScrollView
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_below="@id/search">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/shop_by_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/shop_by_categories"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivApparel"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/shop_by_categories"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/apparel" />
+
+            <ImageView
+                android:id="@+id/ivEquipments"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/shop_by_categories"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/ivApparel"
+                android:src="@drawable/equipments" />
+
+            <ImageView
+                android:id="@+id/ivSupplements"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/ivApparel"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/supplements" />
+
+            <ImageView
+                android:id="@+id/ivAccessories"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/ivApparel"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/ivSupplements"
+                android:src="@drawable/accessories" />
+
+            <TextView
+                android:id="@+id/trendingProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivSupplements"
+                android:layout_marginVertical="10dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/trending_products"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/trendingProducts"
+                android:layout_marginHorizontal="20dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

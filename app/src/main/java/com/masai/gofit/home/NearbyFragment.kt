@@ -13,10 +13,8 @@ import kotlinx.android.synthetic.main.fragment_nearby.*
 
 class NearbyFragment : Fragment() {
 
-    private var layoutManager : RecyclerView.LayoutManager? = null
-    private var adapter : RecyclerView.Adapter<NearAdapter.NearViewHolder>? = null
-
-
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<NearAdapter.NearViewHolder>? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +30,5 @@ class NearbyFragment : Fragment() {
         near_recyclerView.layoutManager = layoutManager
         adapter = NearAdapter()
         near_recyclerView.adapter = adapter
-
-
     }
 }

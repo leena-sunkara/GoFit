@@ -46,4 +46,7 @@
     <string name="martial_art_classes">Martial Art Classes</string>
     <string name="zumba_classes">Zumba Classes</string>
     <string name="exclusive_gofit_clubs">Exclusive GoFit’s Clubs</string>
+    <string name="shop_by_categories">Shop By Categories</string>
+    <string name="trending_products">Trending Products</string>
+    <string name="search">Search</string>
 </resources>

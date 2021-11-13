@@ -3,63 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".assessment.WelcomeFragment">
 
     <ImageView
-        android:id="@+id/back"
-        android:layout_width="12dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/back" />
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_back_arrow" />
 
     <TextView
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/back"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="18dp"/>
-
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/instructor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="56dp"
+        android:layout_below="@id/backArrow"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/instructor" />
 
     <TextView
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/instructor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
         android:text="Welcome!"
         android:textColor="@color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/instructor"
-        android:textSize="28dp"/>
+        android:textSize="28sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
+        android:layout_below="@+id/welcome"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         android:text="The following quick assessment will help us presonilize your daily Fitness routine Diet plan "
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/welcome"
-        android:textSize="20dp"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/continueBtn1"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
         android:background="@drawable/cont"
         android:text="Continue" />
 

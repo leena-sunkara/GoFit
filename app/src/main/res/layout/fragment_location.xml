@@ -6,67 +6,70 @@
     tools:context=".assessment.WelcomeFragment">
 
     <ImageView
-        android:id="@+id/back"
-        android:layout_width="12dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="45dp"
-        android:src="@drawable/back" />
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_back_arrow" />
 
     <TextView
         android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/back"
-        android:layout_marginStart="305dp"
-        android:layout_marginTop="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
         android:text="Skip"
         android:textColor="@color/black"
-        android:textSize="16dp"/>
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/progressbar"
         android:layout_width="280dp"
         android:layout_height="10dp"
-        android:src="@drawable/loading"
-        android:layout_marginTop="48dp"
-        android:layout_marginStart="54dp"/>
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/loading" />
 
     <ImageView
         android:layout_width="215dp"
         android:layout_height="10dp"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="22dp"
         android:src="@drawable/loadingprogress" />
 
     <TextView
         android:id="@+id/location"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What's your location ? "
+        android:layout_below="@+id/progressbar"
+        android:layout_margin="20dp"
+        android:text="What's your location ?"
         android:textColor="@color/black"
         android:textSize="22dp"
-        android:textStyle="bold"
-        android:layout_below="@+id/progressbar"
-        android:layout_marginTop="38dp"
-        android:layout_marginStart="24dp"/>
+        android:textStyle="bold" />
 
-   <SearchView
-       android:id="@+id/locationBar"
-       android:layout_width="368dp"
-       android:layout_height="58dp"
-       android:layout_below="@id/location"
-       android:background="#E4F9FF"
-       android:layout_marginTop="40dp"
-       android:layout_marginStart="24dp"/>
+    <SearchView
+        android:id="@+id/locationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_margin="20dp"
+        android:background="#E4F9FF" />
 
     <Button
         android:id="@+id/contninueBtn8"
-        android:layout_width="368dp"
-        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/locationBar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/cont"
         android:text="Continue"
         android:textColor="@color/white" />
