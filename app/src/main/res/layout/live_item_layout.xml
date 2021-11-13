@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F5"
+        >
+
+        <ImageView
+            android:id="@+id/live_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/live1" />
+        <ImageView
+            android:id="@+id/liveicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/liveicon" />
+
+
+        <TextView
+            android:id="@+id/tranner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/live_image"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Girish Chandra"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/excercise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/tranner_name"
+            android:text="Stringth &amp; Cardio" />
+
+        <TextView
+            android:id="@+id/excercise_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/excercise_name"
+            android:layout_marginStart="10dp"
+            android:text="45 min | intermidiate" />
+
+        <Button
+            android:id="@+id/liveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/livebutton"
+            android:layout_toRightOf="@id/excercise_name"
+            android:layout_below="@+id/live_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="60dp"
+            android:text="Join"
+            android:textAllCaps="false"
+            android:textColor="#44DB5E"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
