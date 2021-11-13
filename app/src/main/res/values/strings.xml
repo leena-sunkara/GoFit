@@ -35,4 +35,15 @@
     <string name="what_equipments_do_you_have">What equipments do you have access to ?</string>
     <string name="less_than_15_mins"><![CDATA[< 15 min]]></string>
     <string name="facebook_app_id">1002567000309251</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="location">Location</string>
+    <string name="person_location">Person Location</string>
+    <string name="explore_fitness_options_near_you">Explore Fitness Options Near You</string>
+    <string name="gyms">Gyms</string>
+    <string name="fitness_studio">Fitness Studio</string>
+    <string name="yoga_classes">Yoga Classes</string>
+    <string name="aerobic_classes">Aerobic Classes</string>
+    <string name="martial_art_classes">Martial Art Classes</string>
+    <string name="zumba_classes">Zumba Classes</string>
+    <string name="exclusive_gofit_clubs">Exclusive GoFit’s Clubs</string>
 </resources>

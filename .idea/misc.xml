@@ -4,11 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Leena/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/activity_list_item.xml" value="0.11956521739130435" />
+        <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/back.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/bg_overlay.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/custom_tab.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/default_dot.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/forgot_password.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/ic_back_arrow.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/ic_drop_down.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/ic_facebook.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/ic_find_your_yoga_class.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/drawable/ic_google.xml" value="0.19583333333333333" />
@@ -43,7 +45,7 @@
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_gender.xml" value="0.11231884057971014" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_goal.xml" value="0.11231884057971014" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_guild.xml" value="0.11231884057971014" />
-        <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_home.xml" value="0.11231884057971014" />
+        <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_intrest.xml" value="0.11231884057971014" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_level.xml" value="0.11231884057971014" />
         <entry key="..\:/Users/Leena/Documents/Android/Kotlin/Projects/GoFit/app/src/main/res/layout/fragment_live_classes.xml" value="0.11594202898550725" />

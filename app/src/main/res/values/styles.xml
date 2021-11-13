@@ -3,6 +3,7 @@
 
     <style name="tab_text">
         <item name="android:textAllCaps">false</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
